@@ -1,0 +1,102 @@
+#cabeçalho{
+
+  padding: 10px 10px;
+  height: 130px;
+  width: 101.5%;
+  background-color: #547980;
+  margin-left: -1%;
+  margin-top: -1%;
+  margin-right:-1%;
+}
+
+img.logo{
+width: 150px;
+height: 150px;
+padding-left: 5%;
+
+}
+.boxSair{
+margin-left: 90%;
+margin-top: -5%;
+
+}
+
+
+button{
+  width: 95px;
+  height: 55px;
+  font-size: 26px;
+  font-family: verdana;
+  font-style: bold;
+  color: white;
+  background-color: #FF66C4;
+  border:3px solid black;
+  border-radius: 12%;
+}
+button:hover{
+  background-color: #dd389e;
+  cursor: pointer;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 99.22%;
+  height: 100%;
+  background-color: #e5fcc2;
+}
+
+
+/* Cartas */
+
+.grid{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; /* Posso por em pixel ou em fração*/ 
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* border: 3px solid black; */
+  margin-top: 30px;
+}
+.card{
+  width: 100%;
+  height: 230px;
+  background-color: #333;
+  border:3px solid black;
+  border-radius: 5px;
+  position: relative;
+  transition: all 400ms ease; /* transição em todas as propriedades, com 400 milisegundos */
+  transform-style: preserve-3d;
+
+}
+.face{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 500ms ease;
+
+}
+.front{
+
+  background-size: cover; /* Definir qual será o tamanho da imagem de fundo de alguma tag */
+  background-position: center; /* Centralizar  */
+  transform: rotateY(180deg);
+
+}
+.back{
+  background-image: url('../ImagemMemoria/Jogodamemoria.jpg');
+  background-size: cover; /*  Definir qual será o tamanho da imagem de fundo de alguma tag*/
+  background-position: center; /* Centralizar*/
+  backface-visibility: hidden; /* Quando o objeto virar 180º graus, ele fica invisivel (a parte de trás)*/
+
+}
+.reveal-card{
+    transform: rotateY(180deg);  /* Clicando em cima ele gira*/
+}
+.disabled-card{
+  filter: saturate(2);
+  opacity: 0.5;
+}
