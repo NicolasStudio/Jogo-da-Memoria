@@ -40,7 +40,7 @@ return element;
         if(disabledCard.length == 20){
             setTimeout(() => {
                 alert('Parabéns, você venceu!!!');
-            }, 400);
+            }, 700);
             
 
         }
@@ -69,7 +69,7 @@ return element;
                 /*Seta as variaveis vazias novamente */
                 primeiraCard = '';
                 segundaCard = '';
-            }, 500);
+            }, 700);
 
         }
     }
